@@ -18,7 +18,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>
@@ -99,7 +98,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>
@@ -180,7 +178,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>
@@ -261,7 +258,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>
@@ -342,7 +338,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>
@@ -423,7 +418,6 @@ export default function NavBar() {
                         <div className='w-[275px] px-[10px] py-10 bg-white'>
                             <ul className='flex flex-col gap-8'>
                                 <li onMouseEnter={() => {
-                                    console.log("salam");
                                     setValueSubMenu("گوشی موبایل")
                                 }} className='liItemSubMenu transition-all duration-300 flex justify-between items-center'>
                                     <div className='flex items-center gap-2'>

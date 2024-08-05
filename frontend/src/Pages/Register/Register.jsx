@@ -7,16 +7,18 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch } from 'react-redux';
 import { authRegister } from '../../Redux/auth/auth';
 import { notify } from '../../App';
-
-
+import { Link } from 'react-router-dom';
+import { ClipLoader } from 'react-spinners'
+import Footer from '../../Parts/Footer/Footer';
 
 
 
 
 export default function Register() {
     const dispatch = useDispatch();
-    const [issubmitRules, setIsSubmitRules] = useState(false)
-    const [isNewsLetter, setIsNewsLetter] = useState(false)
+    const [issubmitRules, setIsSubmitRules] = useState(false)//is rules
+    const [isStartLoaderSubmit, setIsStartLoaderSubmit] = useState(false) // start loader
+
 
     // hook form
     const {
@@ -36,6 +38,7 @@ export default function Register() {
                     <NavBar />
                 </div>
             </div>
+
             {/* page */}
             <div className='flex flex-col justify-center items-center'>
                 {/* btn register  */}
@@ -50,24 +53,15 @@ export default function Register() {
                         <img className='w-[220px] h-[60px]' src="src/assets/images/logo/logo2.png" alt="logo2" />
                     </div>
                 </div>
-                <div className='border border-[#D9D9D9] py-[30px] px-[50px] '>
+                <div className='border border-[#D9D9D9] w-[1150px] py-[30px] px-[50px] '>
 
                     <p className='font-DanaMedium text-[#000000] text-lg text-center'>ثبت نام مصرف کننده</p>
-                    <form onSubmit={handleSubmit((data) => {
-                        if (issubmitRules) {
-                            dispatch(authRegister(data))
-                            if(isNewsLetter){
-                                
-                            }
-                        } else {
-                            notify("لطفا با قوانین و مقررات موافقت کنید")
-                        }
-                    })} className='mt-6'>
+                    <form onSubmit={(e) => e.preventDefault()} className='mt-6'>
                         <div className='grid grid-cols-2 gap-8'>
                             {/* name */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('name')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('name')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">نام</span>
                                     </label>
@@ -77,7 +71,7 @@ export default function Register() {
                             {/* Username */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('username')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('username')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">نام کاربری</span>
                                     </label>
@@ -87,7 +81,7 @@ export default function Register() {
                             {/* Phone */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('phone')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('phone')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">شماره همراه</span>
                                     </label>
@@ -98,7 +92,7 @@ export default function Register() {
                             {/* email */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('email')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('email')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">ایمیل</span>
                                     </label>
@@ -108,7 +102,7 @@ export default function Register() {
                             {/* password */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('password')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('password')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">رمز عبور</span>
                                     </label>
@@ -118,7 +112,7 @@ export default function Register() {
                             {/* confirmPassword */}
                             <div>
                                 <div className="flex flex-col relative">
-                                    <input {...register('confirmPassword')} type="text" className="input-field text-[#4D4D4D] w-[500px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                                    <input {...register('confirmPassword')} type="text" className="input-field text-[#4D4D4D]  text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                                     <label htmlFor="" className="input-label">
                                         <span className="label-name text-[#4D4D4D]">تایید رمز عبور</span>
                                     </label>
@@ -128,11 +122,6 @@ export default function Register() {
                         </div>
                         {/* rules */}
                         <div className='mt-8 flex flex-col gap-3'>
-                            {/* newsLetter */}
-                            <div className='flex gap-2'>
-                                <input checked={isNewsLetter} type="checkbox" className='accent-mainBlue w-[16px]' onChange={(e) => setIsNewsLetter(e.target.checked)} />
-                                <p className='text-base text-[#4D4D4D]'>مایل به دریافت خبرنامه هستم</p>
-                            </div>
                             {/* submitRules */}
                             <div className='flex gap-2'>
                                 <input type="checkbox" checked={issubmitRules} className='accent-mainBlue w-[16px]' onChange={(e) => setIsSubmitRules(e.target.checked)} />
@@ -142,12 +131,32 @@ export default function Register() {
 
                         {/* register btn */}
                         <div className='flex justify-center mt-8'>
-                            <button className='text-nowrap min-w-[110px] bg-mainBlue text-center text-[#FFFFFF] text-base/[41px] rounded-[10px] hover:bg-[#0A6DB7] transition-all duration-300'>
+                            <button disabled={isStartLoaderSubmit} onClick={handleSubmit((data) => {
+                                setIsStartLoaderSubmit(true)
+                                if (issubmitRules) {
+                                    dispatch(authRegister(data))
+                                } else {
+                                    notify("error" , "لطفا با قوانین و مقررات موافقت کنید")
+                                }
+                                setTimeout(() => {
+                                    setIsStartLoaderSubmit(false)
+                                }, 1000);
+                            })} className={`flex items-center justify-center gap-1 text-nowrap min-w-[110px] text-center text-[#FFFFFF] text-base/[41px] rounded-[10px]  transition-all duration-300 ${isStartLoaderSubmit ? "bg-[#808080]" : "bg-mainBlue hover:bg-[#0A6DB7]"}`}>
                                 ثبت نام
+                                {isStartLoaderSubmit && <ClipLoader size={20} color={"#ffffff"} />}
+
                             </button>
                         </div>
                     </form>
+                    {/* login */}
+                    <div className='mt-4'>
+                        <p className='text-sm text-center text-[#808080]'>قبلا ثبت نام کرده اید ؟ <Link to='/login' className='underline text-[#000000] font-DanaDemiBold'>ورود</Link></p>
+                    </div>
                 </div>
+            </div>
+
+            <div className='font-Dana'>
+                <Footer />
             </div>
         </div>
     )
