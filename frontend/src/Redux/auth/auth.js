@@ -49,7 +49,6 @@ export const authLogin = createAsyncThunk("auth/authLoginToServer", async (phone
 
 export const authVerify = createAsyncThunk("auth/authVerifyToServer", async (objData) => {
     let status = "error";
-    console.log(objData);
 
     try {
         const response = await apiRequest.post("auth/verifyOtp", objData)

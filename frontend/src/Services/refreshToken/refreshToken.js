@@ -5,8 +5,9 @@ const refreshToken = async () => {
     try {
         const response = await apiRequest.post("auth/verifyOtp", {refreshToken: Cookies.get('token')})
         console.log(response);
-        // const data = await response.data;
-        // return data
+        const data = await response.data;
+        console.log(data);
+        
     } catch (error) {
         console.log(error);
 

@@ -129,6 +129,20 @@
         font-size: 12px;
         transform: translateY(-5px);
     }
+
+
+    /* swiper */
+    .next-arrow,
+    .prev-arrow {
+        display: none;
+    }
+
+    .parentSwiper:hover {
+        .next-arrow,
+        .prev-arrow {
+            display: block;
+        }
+    }
 }
 
 /* width */
