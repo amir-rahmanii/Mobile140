@@ -23,7 +23,7 @@ export default function Footer() {
         resolver: yupResolver(newsLetterSchema)
     });
     return (
-        <footer className='bg-mainBlue mt-8 flex justify-center items-center pt-[50px] pb-[25px]'>
+        <footer className='bg-mainBlue mt-8 flex justify-center font-DanaMedium items-center pt-[50px] pb-[25px]'>
             <div className=' w-[1150px]'>
                 {/* logo */}
                 <div className='flex justify-center items-center'>
@@ -109,7 +109,7 @@ export default function Footer() {
                             <div className='text-[#BFBFBF] w-[50px] border-l border-[#BFBFBF] h-full flex justify-center items-center text-[21px]'>
                                 <FiMail />
                             </div>
-                            <input {...register('email')} className='text-sm px-5  w-[369px] text-[#4D4D4D] text-left outline-none' type="text" placeholder="ایمیل خود را وارد کنید" />
+                            <input {...register('email')} className='text-sm px-5 py-1 font-DanaMedium w-[369px] text-[#4D4D4D] text-left outline-none' type="text" placeholder="ایمیل خود را وارد کنید" />
                         </div>
                         {errors.email && <p className='text-mainRed bg-white p-2 rounded-[10px] text-sm mt-1.5'> {errors.email.message}</p>}
                         {/* btn */}

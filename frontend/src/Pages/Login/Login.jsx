@@ -5,10 +5,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { authLogin, authVerify } from '../../Redux/auth/auth';
 import LoginTemplate from '../../Template/LoginTemplate/LoginTemplate';
 import Verify from '../../Template/Verify/Verify';
+import Footer from '../../Parts/Footer/Footer';
 
 export default function Login() {
     const dispatch = useDispatch();
-    const [phoneNumber , setPhoneNumber] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
     const isInfoAuthLogin = useSelector(state => state.auth)
 
     //login Handler
@@ -16,10 +17,10 @@ export default function Login() {
         dispatch(authLogin({ phone: phone }))
         setPhoneNumber(phone)
     }
-   
+
     //verify code
     const verifyHandler = (code) => {
-        dispatch(authVerify({ phone: phoneNumber , code : +code }))
+        dispatch(authVerify({ phone: phoneNumber, code: +code }))
     }
 
     return (
@@ -44,6 +45,10 @@ export default function Login() {
                     <LoginTemplate loginHandler={loginHandler} />
                 )}
 
+            </div>
+            {/* footer */}
+            <div>
+                <Footer />
             </div>
         </div>
     )

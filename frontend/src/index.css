@@ -138,10 +138,23 @@
     }
 
     .parentSwiper:hover {
+
         .next-arrow,
         .prev-arrow {
             display: block;
         }
+    }
+
+    /* border-gradient-rounded */
+    .border-gradient-rounded {
+        /* Border */
+        border: 3px solid transparent;
+        border-radius: 9999px;
+        background:
+            linear-gradient(to right, white, white),
+            linear-gradient(to right top, #ffc600 20%, #ff0040, #e600cc 80%);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
     }
 }
 
