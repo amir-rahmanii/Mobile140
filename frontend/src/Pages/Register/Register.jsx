@@ -6,10 +6,10 @@ import registerSchema from '../../Validations/register';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch } from 'react-redux';
 import { authRegister } from '../../Redux/auth/auth';
-import { notify } from '../../App';
 import { Link } from 'react-router-dom';
 import { ClipLoader } from 'react-spinners'
 import Footer from '../../Parts/Footer/Footer';
+import notify from '../../Template/Toast/Toast';
 
 
 

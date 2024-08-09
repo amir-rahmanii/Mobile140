@@ -10,6 +10,8 @@ import Footer from '../../Parts/Footer/Footer'
 import SwiperProduct from '../../Components/IndexPage/SwiperProduct/SwiperProduct';
 import SvgItem from '../../Components/SvgItem/SvgItem';
 import Info140 from '../../Components/IndexPage/Info140/Info140';
+import Articles from '../../Components/IndexPage/Articles/Articles';
+import BestBrands from '../../Components/IndexPage/BestBrands/BestBrands';
 
 export default function Index() {
 
@@ -42,14 +44,14 @@ export default function Index() {
       ) : (
         <CSSTransition key="content" nodeRef={contentRef} timeout={500} classNames="fade">
           <div>
-            <div className='border-b'>
-              <div className='container font-DanaMedium'>
+            <div className='border-b fixed top-0 w-full bg-white z-50'>
+              <div className='container font-DanaMedium '>
                 <Header />
                 <NavBar />
               </div>
             </div>
             {/* page */}
-            <div className='font-DanaMedium'>
+            <div className='font-DanaMedium mt-[122px]'>
               {/* Swiper */}
               <div>
                 <SwiperBaner />
@@ -80,10 +82,10 @@ export default function Index() {
 
               {/* images */}
               <div className='flex justify-center items-center gap-5 my-12'>
-                <img className='w-[275px] h-[172px]' src="/src/assets/images/index/1.jpg" alt="1" />
-                <img className='w-[275px] h-[172px]' src="/src/assets/images/index/2.jpg" alt="2" />
-                <img className='w-[275px] h-[172px]' src="/src/assets/images/index/3.jpg" alt="3" />
-                <img className='w-[275px] h-[172px]' src="/src/assets/images/index/4.jpg" alt="4" />
+                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/1.jpg" alt="1" />
+                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/2.jpg" alt="2" />
+                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/3.jpg" alt="3" />
+                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/4.jpg" alt="4" />
               </div>
 
               {/* products */}
@@ -95,8 +97,8 @@ export default function Index() {
               </div>
 
               {/* infos */}
-              <div className='flex justify-center items-center'>
-                <div dir='ltr' className=' border rounded-[10px] '>
+              <div className='flex justify-center items-center '>
+                <div dir='ltr' className=' border rounded-[10px] w-[1150px] '>
                   <div className='flex divide-x-2 py-3'>
                     <Info140
                       title='تضمین قیمت'
@@ -120,6 +122,16 @@ export default function Index() {
                     />
                   </div>
                 </div>
+              </div>
+
+              {/* articles */}
+              <div className='flex justify-center'>
+                <Articles />
+              </div>
+
+              {/* best brands */}
+              <div>
+                  <BestBrands />
               </div>
             </div>
             {/* footer */}

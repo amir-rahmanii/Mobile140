@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import apiRequest from "../../Services/Axios/axios";
-import { notify } from "../../App";
 import Cookies from 'js-cookie'
+import notify from "../../Template/Toast/Toast";
 
 
 export const authRegister = createAsyncThunk("auth/authRegisterToServer", async (ObjData) => {
@@ -82,7 +82,7 @@ const slice = createSlice({
 
             console.log(action.payload);
             if (action.payload) {
-                Cookies.set('token', action.payload.data.accessToken, { secure: true })
+                Cookies.set('token', action.payload.data.accessToken)
             }
         })
 
@@ -97,7 +97,7 @@ const slice = createSlice({
         builder.addCase(authVerify.fulfilled, (state, action) => {
             console.log(action.payload);
             if (action.payload) {
-                Cookies.set('token', action.payload.data, { secure: true })
+                Cookies.set('token', action.payload.data)
             }
         })
     }

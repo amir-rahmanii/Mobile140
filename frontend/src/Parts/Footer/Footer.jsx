@@ -115,8 +115,8 @@ export default function Footer() {
                         {/* btn */}
                         <button onClick={handleSubmit((data) => {
                             setIsStartLoaderSubmit(true)
-                            // dispatch(createNewsLetter({ email: data.email }))
-                            refreshToken()
+                            dispatch(createNewsLetter({ email: data.email }))
+                            // refreshToken()
                             setTimeout(() => {
                                 setIsStartLoaderSubmit(false)
                             }, 1000);

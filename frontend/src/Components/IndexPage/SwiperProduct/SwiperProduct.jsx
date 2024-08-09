@@ -64,7 +64,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>

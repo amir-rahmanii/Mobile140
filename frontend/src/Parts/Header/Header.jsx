@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import { FiShoppingCart } from "react-icons/fi";
 
 export default function Header() {
+
+    const [isShowOpenBasket, setIsShowOpenBasket] = useState(false)
+
     return (
-        <header className='py-2.5 flex justify-between'>
+        <header className='py-2.5 flex justify-between bg-white'>
             {/* logo and searchbar */}
             <div className='flex items-center gap-8'>
                 {/* logo page */}
@@ -26,18 +29,18 @@ export default function Header() {
                 {/* login register */}
                 <div className='text-sm flex rounded-[5px] items-center border border-[#D7DEE0] p-[5px]'>
                     <Link to="/login" className='px-[5px]'>
-                    ورود
+                        ورود
                     </Link>
-                    | 
+                    |
                     <Link to="/register" className='px-[5px]'>
-                    ثبت نام
+                        ثبت نام
                     </Link>
                 </div>
                 {/* basket */}
-                <div className='flex rounded-[5px] relative items-center border border-[#D7DEE0] p-[5px] text-[20px]'>
+                <div onClick={() => setIsShowOpenBasket(true)} className='flex rounded-[5px] relative items-center border border-[#D7DEE0] p-[5px] text-[20px]'>
                     <FiShoppingCart className='hover:scale-110 transition-all duration-300' />
                     <div className='bg-mainRed text-[#ffffff] absolute right-[-10px] bottom-[-5px] rounded-[5px] min-w-4 h-4 pt-[2px] flex justify-center items-center text-xs'>
-                            <span>1</span>
+                        <span>1</span>
                     </div>
                 </div>
             </div>
