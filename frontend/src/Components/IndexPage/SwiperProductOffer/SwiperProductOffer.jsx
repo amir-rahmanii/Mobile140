@@ -50,7 +50,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                                 {/* img */}
                                 <img className='w-[156px] h-[201px]' src="/src/assets/images/offerProduct/2.png" alt="2" />
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px]'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] h-[75px] line-clamp-3'>  گوی مدل Pocoابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -76,7 +76,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                                 {/* img */}
                                 <img className='w-[156px] h-[201px]' src="/src/assets/images/offerProduct/2.png" alt="2" />
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px]'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] h-[75px] line-clamp-3'>  گوی مدل Pocoابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -102,7 +102,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                                 {/* img */}
                                 <img className='w-[156px] h-[201px]' src="/src/assets/images/offerProduct/2.png" alt="2" />
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] h-[75px] line-clamp-3'>  گوی مدل Pocoابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -128,7 +128,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                                 {/* img */}
                                 <img className='w-[156px] h-[201px]' src="/src/assets/images/offerProduct/2.png" alt="2" />
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px]'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] h-[75px] line-clamp-3'>  گوی مدل Pocoابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -154,7 +154,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                                 {/* img */}
                                 <img className='w-[156px] h-[201px]' src="/src/assets/images/offerProduct/2.png" alt="2" />
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px]'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] h-[75px] line-clamp-3'>  گوی مدل Pocoابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -174,6 +174,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                         </div>
                     </SwiperSlide>
+              
                
 
                 </Swiper>

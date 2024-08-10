@@ -58,7 +58,7 @@ export default function Articles() {
                   </div>
                   <div className='px-5 pt-[10px] pb-5'>
                     {/* title */}
-                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-2'>بهترین گوشی از نظر آنتن دهی</p>
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
                     {/* info */}
                     <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
                       {/* buy */}
@@ -85,7 +85,7 @@ export default function Articles() {
                   </div>
                   <div className='px-5 pt-[10px] pb-5'>
                     {/* title */}
-                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-2'>بهترین گوشی از نظر آنتن دهی</p>
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
                     {/* info */}
                     <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
                       {/* buy */}
@@ -112,7 +112,7 @@ export default function Articles() {
                   </div>
                   <div className='px-5 pt-[10px] pb-5'>
                     {/* title */}
-                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-2'>بهترین گوشی از نظر آنتن دهی</p>
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
                     {/* info */}
                     <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
                       {/* buy */}
@@ -139,7 +139,7 @@ export default function Articles() {
                   </div>
                   <div className='px-5 pt-[10px] pb-5'>
                     {/* title */}
-                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-2'>بهترین گوشی از نظر آنتن دهی</p>
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
                     {/* info */}
                     <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
                       {/* buy */}
@@ -156,6 +156,61 @@ export default function Articles() {
               </div>
             </div>
           </SwiperSlide>
+          <SwiperSlide >
+            <div className='h-[350px]'>
+              <div className='w-[364px] relative bg-white flex flex-col justify-between border  rounded-[10px]'>
+                <div>
+                  {/* img */}
+                  <div className='w-[362px] h-[218px] rounded-t-[10px] overflow-hidden '>
+                    <img className='hover:scale-125 transition-all duration-700' src="/src/assets/images/articles/1.jpg" alt="1" />
+                  </div>
+                  <div className='px-5 pt-[10px] pb-5'>
+                    {/* title */}
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
+                    {/* info */}
+                    <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
+                      {/* buy */}
+                      <p className='text-[14px]/[20px] pr-4'>راهنمای خرید</p>
+                      {/* date */}
+                      <p className='text-[14px]/[20px] font-DanaDemiBold pl-4'>03/03/03</p>
+                    </div>
+                  </div>
+                </div>
+                {/* btn */}
+                <Link className='w-[80px] h-[30px] absolute bottom-[-15px] left-[30px] text-xs/[30px] justify-center items-center text-center bg-mainBlue text-white rounded-[10px] hover:bg-[#0087CD] transition-all duration-300'>
+                  مشاهده
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide >
+            <div className='h-[350px]'>
+              <div className='w-[364px] relative bg-white flex flex-col justify-between border  rounded-[10px]'>
+                <div>
+                  {/* img */}
+                  <div className='w-[362px] h-[218px] rounded-t-[10px] overflow-hidden '>
+                    <img className='hover:scale-125 transition-all duration-700' src="/src/assets/images/articles/1.jpg" alt="1" />
+                  </div>
+                  <div className='px-5 pt-[10px] pb-5'>
+                    {/* title */}
+                    <p className='font-DanaDemiBold text-right text-[14px]/[28x] line-clamp-1'>بهترین گوشی  هترین گوشی از نظر آنتن ده از نظر آنتن دهی</p>
+                    {/* info */}
+                    <div dir='ltr' className='flex items-center mt-10 justify-end text-[#999999] divide-x-2'>
+                      {/* buy */}
+                      <p className='text-[14px]/[20px] pr-4'>راهنمای خرید</p>
+                      {/* date */}
+                      <p className='text-[14px]/[20px] font-DanaDemiBold pl-4'>03/03/03</p>
+                    </div>
+                  </div>
+                </div>
+                {/* btn */}
+                <Link className='w-[80px] h-[30px] absolute bottom-[-15px] left-[30px] text-xs/[30px] justify-center items-center text-center bg-mainBlue text-white rounded-[10px] hover:bg-[#0087CD] transition-all duration-300'>
+                  مشاهده
+                </Link>
+              </div>
+            </div>
+          </SwiperSlide>
+ 
 
 
 

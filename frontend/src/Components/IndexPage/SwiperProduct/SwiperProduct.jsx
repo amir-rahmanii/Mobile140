@@ -49,7 +49,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -80,7 +80,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -95,7 +95,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -111,7 +111,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -126,7 +126,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -142,7 +142,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -157,7 +157,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -173,7 +173,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -188,7 +188,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -204,7 +204,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -219,7 +219,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -235,7 +235,7 @@ export default function SwiperProduct() {
                                     <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
                                 </div>
                                 {/* title */}
-                                <p className='font-DanaDemiBold my-[10px] text-center text-[12px]/[25px] line-clamp-3'>  گوشی موبایل شیائومی مدل Poco M5S ظرفیت 128 گیگابایت رم 6 گیگابایت</p>
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
                                 {/* price */}
                                 <div className='flex items-center justify-center gap-1'>
                                     <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
@@ -250,7 +250,7 @@ export default function SwiperProduct() {
                                 </div>
                             </div>
                                 {/* infp more */}
-                                <div className='py-[7px] bg-[#16509D]'>
+                                <div className='py-[7px] bg-mainBlue'>
                                     <div className='font-DanaDemiBold text-center text-white text-sm'>
                                         <Link>مشاهده بیشتر</Link>
                                     </div>
@@ -258,6 +258,162 @@ export default function SwiperProduct() {
 
                         </div>
                     </SwiperSlide>
+                    <SwiperSlide >
+                        <div className='w-[208px] h-[384px] bg-white flex flex-col justify-between overflow-hidden border  rounded-[10px]'>
+                            <div className='px-[10px]'>
+                                {/* img */}
+                                <div className='flex justify-center'>
+                                    <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
+                                </div>
+                                {/* title */}
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
+                                {/* price */}
+                                <div className='flex items-center justify-center gap-1'>
+                                    <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
+                                    <p className='text-xs'>تومان</p>
+                                </div>
+                                {/* price offer */}
+                                <div className='flex justify-center items-center gap-4'>
+                                    <p className='text-[13px] text-[#999999] line-through'>11,678,800</p>
+                                    <div className='w-[40px] h-[20px] bg-[#D90000] rounded-[10px]'>
+                                        <p className='text-white text-sm/[22px] text-center'>%10</p>
+                                    </div>
+                                </div>
+                            </div>
+                                {/* infp more */}
+                                <div className='py-[7px] bg-mainBlue'>
+                                    <div className='font-DanaDemiBold text-center text-white text-sm'>
+                                        <Link>مشاهده بیشتر</Link>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className='w-[208px] h-[384px] bg-white flex flex-col justify-between overflow-hidden border  rounded-[10px]'>
+                            <div className='px-[10px]'>
+                                {/* img */}
+                                <div className='flex justify-center'>
+                                    <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
+                                </div>
+                                {/* title */}
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
+                                {/* price */}
+                                <div className='flex items-center justify-center gap-1'>
+                                    <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
+                                    <p className='text-xs'>تومان</p>
+                                </div>
+                                {/* price offer */}
+                                <div className='flex justify-center items-center gap-4'>
+                                    <p className='text-[13px] text-[#999999] line-through'>11,678,800</p>
+                                    <div className='w-[40px] h-[20px] bg-[#D90000] rounded-[10px]'>
+                                        <p className='text-white text-sm/[22px] text-center'>%10</p>
+                                    </div>
+                                </div>
+                            </div>
+                                {/* infp more */}
+                                <div className='py-[7px] bg-mainBlue'>
+                                    <div className='font-DanaDemiBold text-center text-white text-sm'>
+                                        <Link>مشاهده بیشتر</Link>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className='w-[208px] h-[384px] bg-white flex flex-col justify-between overflow-hidden border  rounded-[10px]'>
+                            <div className='px-[10px]'>
+                                {/* img */}
+                                <div className='flex justify-center'>
+                                    <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
+                                </div>
+                                {/* title */}
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
+                                {/* price */}
+                                <div className='flex items-center justify-center gap-1'>
+                                    <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
+                                    <p className='text-xs'>تومان</p>
+                                </div>
+                                {/* price offer */}
+                                <div className='flex justify-center items-center gap-4'>
+                                    <p className='text-[13px] text-[#999999] line-through'>11,678,800</p>
+                                    <div className='w-[40px] h-[20px] bg-[#D90000] rounded-[10px]'>
+                                        <p className='text-white text-sm/[22px] text-center'>%10</p>
+                                    </div>
+                                </div>
+                            </div>
+                                {/* infp more */}
+                                <div className='py-[7px] bg-mainBlue'>
+                                    <div className='font-DanaDemiBold text-center text-white text-sm'>
+                                        <Link>مشاهده بیشتر</Link>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className='w-[208px] h-[384px] bg-white flex flex-col justify-between overflow-hidden border  rounded-[10px]'>
+                            <div className='px-[10px]'>
+                                {/* img */}
+                                <div className='flex justify-center'>
+                                    <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
+                                </div>
+                                {/* title */}
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
+                                {/* price */}
+                                <div className='flex items-center justify-center gap-1'>
+                                    <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
+                                    <p className='text-xs'>تومان</p>
+                                </div>
+                                {/* price offer */}
+                                <div className='flex justify-center items-center gap-4'>
+                                    <p className='text-[13px] text-[#999999] line-through'>11,678,800</p>
+                                    <div className='w-[40px] h-[20px] bg-[#D90000] rounded-[10px]'>
+                                        <p className='text-white text-sm/[22px] text-center'>%10</p>
+                                    </div>
+                                </div>
+                            </div>
+                                {/* infp more */}
+                                <div className='py-[7px] bg-mainBlue'>
+                                    <div className='font-DanaDemiBold text-center text-white text-sm'>
+                                        <Link>مشاهده بیشتر</Link>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className='w-[208px] h-[384px] bg-white flex flex-col justify-between overflow-hidden border  rounded-[10px]'>
+                            <div className='px-[10px]'>
+                                {/* img */}
+                                <div className='flex justify-center'>
+                                    <img className='w-[156px] h-[201px]' src="/src/assets/images/product/1.png" alt="1" />
+                                </div>
+                                {/* title */}
+                                <p className='font-DanaDemiBold mt-[10px] mb-[5px] text-center text-[12px]/[25px] line-clamp-3 h-[75px]'>  گوشی موبایل vموبایلم و یلموب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا  وب ایل شیا ئومیم 6 گیگابایت</p>
+                                {/* price */}
+                                <div className='flex items-center justify-center gap-1'>
+                                    <p className='text-[16px]/[31px] font-DanaDemiBold'>11,678,800</p>
+                                    <p className='text-xs'>تومان</p>
+                                </div>
+                                {/* price offer */}
+                                <div className='flex justify-center items-center gap-4'>
+                                    <p className='text-[13px] text-[#999999] line-through'>11,678,800</p>
+                                    <div className='w-[40px] h-[20px] bg-[#D90000] rounded-[10px]'>
+                                        <p className='text-white text-sm/[22px] text-center'>%10</p>
+                                    </div>
+                                </div>
+                            </div>
+                                {/* infp more */}
+                                <div className='py-[7px] bg-mainBlue'>
+                                    <div className='font-DanaDemiBold text-center text-white text-sm'>
+                                        <Link>مشاهده بیشتر</Link>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </SwiperSlide>
+     
 
 
                 </Swiper>
