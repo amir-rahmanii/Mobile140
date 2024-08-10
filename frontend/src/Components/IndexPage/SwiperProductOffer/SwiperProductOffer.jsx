@@ -28,16 +28,16 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                 <img className='w-[130px] h-[150px]' src={img} alt="1" />
                 <Link className='text-white rounded-[5px] border border-white p-2 flex justify-center items-center gap-1'>مشاهده همه  <IoIosArrowBack /></Link>
             </div>
-            <div className='relative w-[530px]'>
+            <div className='relative w-[400px] md:w-[530px]'>
                 <div className="cursor-pointer  shadow-md translate-x-1/2 w-[40px] h-[40px] bg-[#F7F7F7] rounded-[10px] text-[#4D4D4D] text-[20px] absolute right-0 bottom-1/2 z-10 flex justify-center items-center hover:bg-[#E21E24] hover:text-white transition-all duration-300" onClick={handlePrev}><IoIosArrowForward /></div>
                 <Swiper
                     ref={sliderRef}
                     speed={1200}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     modules={[Navigation , Autoplay]}
                     autoplay={true}
                     // breakpoints={{
-                    //     '@0.00': {
+                    //     '0': {
                     //         slidesPerView: 1,
                     //         spaceBetween: 10,
                     //     },

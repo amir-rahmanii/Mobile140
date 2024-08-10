@@ -53,21 +53,21 @@ export default function Index() {
             {/* page */}
             <div className='font-DanaMedium mt-[122px]'>
               {/* Swiper */}
-              <div>
+              <div className='hidden lg:block'>
                 <SwiperBaner />
               </div>
               {/* titleProduct */}
-              <div className='mt-8 flex justify-center gap-6'>
+              {/* <div className='mt-8 flex justify-center gap-6'>
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
-              </div>
+              </div> */}
 
               {/* swiper offer product */}
-              <div className='px-[24px] mt-12 flex justify-center gap-6'>
+              {/* <div className='px-[24px] mt-12 flex flex-col md:flex-row items-center justify-center gap-6'>
                 <SwiperProductOffer
                   bgColor="bg-mainRed"
                   title="شگفت‌انگیز موبایل‌ و تبلت"
@@ -78,26 +78,26 @@ export default function Index() {
                   title="شگفت‌انگیز سایر کالاها"
                   img="/src/assets/images/offerProduct/3.png"
                 />
-              </div>
+              </div> */}
 
               {/* images */}
-              <div className='flex justify-center items-center gap-5 my-12'>
+              {/* <div className='flex justify-center items-center gap-5 my-12'>
                 <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/1.jpg" alt="1" />
                 <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/2.jpg" alt="2" />
                 <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/3.jpg" alt="3" />
                 <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/4.jpg" alt="4" />
-              </div>
+              </div> */}
 
               {/* products */}
-              <div>
+              {/* <div>
                 <SwiperProduct />
                 <SwiperProduct />
                 <SwiperProduct />
                 <SwiperProduct />
-              </div>
+              </div> */}
 
               {/* infos */}
-              <div className='flex justify-center items-center '>
+              {/* <div className='flex justify-center items-center '>
                 <div dir='ltr' className=' border rounded-[10px] w-[1150px] '>
                   <div className='flex divide-x-2 py-3'>
                     <Info140
@@ -122,17 +122,17 @@ export default function Index() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* articles */}
-              <div className='flex justify-center'>
+              {/* <div className='flex justify-center'>
                 <Articles />
-              </div>
+              </div> */}
 
               {/* best brands */}
-              <div>
+              {/* <div>
                   <BestBrands />
-              </div>
+              </div> */}
             </div>
             {/* footer */}
             <div>

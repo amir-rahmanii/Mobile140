@@ -24,13 +24,13 @@ export default function Footer() {
     });
     return (
         <footer className='bg-mainBlue mt-8 flex justify-center font-DanaMedium items-center pt-[50px] pb-[25px]'>
-            <div className=' w-[1150px]'>
+            <div className='w-auto px-3 md:px-0 md:w-[750px] lg:w-[950px] xl:w-[1150px]'>
                 {/* logo */}
                 <div className='flex justify-center items-center'>
                     <img src="/src/assets/images/logo/logo3.png" alt="logo" />
                 </div>
                 {/* menu */}
-                <div className='grid grid-cols-4 mt-8'>
+                <div className='grid justify-center items-center grid-cols-2 md:grid-cols-4 mt-8 gap-3 md:gap-0'>
                     <div>
                         <p className='font-DanaDemiBold text-lg text-[#FFFFFF]'>خدمات مشتریان</p>
                         <ul className='text-mainRed list-disc list-inside mt-2'>
@@ -109,7 +109,7 @@ export default function Footer() {
                             <div className='text-[#BFBFBF] w-[50px] border-l border-[#BFBFBF] h-full flex justify-center items-center text-[21px]'>
                                 <FiMail />
                             </div>
-                            <input {...register('email')} className='text-sm px-5 py-1 font-DanaMedium w-[369px] text-[#4D4D4D] text-left outline-none' type="text" placeholder="ایمیل خود را وارد کنید" />
+                            <input {...register('email')} className='text-sm px-5 py-1 font-DanaMedium w-[269px] md:w-[369px] text-[#4D4D4D] text-left outline-none' type="text" placeholder="ایمیل خود را وارد کنید" />
                         </div>
                         {errors.email && <p className='text-mainRed bg-white p-2 rounded-[10px] text-sm mt-1.5'> {errors.email.message}</p>}
                         {/* btn */}

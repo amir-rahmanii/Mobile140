@@ -8,7 +8,7 @@ export default function NavBar() {
     const [valueSubMenu, setValueSubMenu] = useState("گوشی موبایل")
 
     return (
-        <nav className='font-DanaMedium'>
+        <nav className='font-DanaMedium hidden lg:block'>
             <ul className=' flex gap-[30px]'>
                 <li className='liItemMenu border-b-[3px] relative border-white py-2.5 hover:border-[#4D4D4D] transition-all duration-300'>
                     <Link className='text-[#4C4B4B] text-sm'>موبایل و تبلت</Link>
