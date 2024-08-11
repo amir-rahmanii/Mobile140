@@ -40,7 +40,7 @@ export default function Register() {
             </div>
 
             {/* page */}
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center px-3 md:px-0'>
                 {/* btn register  */}
                 <div className='flex justify-center items-center my-4'>
                     <div className='border-2 border-mainRed py-4 px-6'>
@@ -53,11 +53,11 @@ export default function Register() {
                         <img className='w-[220px] h-[60px]' src="src/assets/images/logo/logo2.png" alt="logo2" />
                     </div>
                 </div>
-                <div className='border border-[#D9D9D9] w-[1150px] py-[30px] px-[50px] '>
+                <div className='border border-[#D9D9D9] w-full  md:w-[750px] lg:w-[950px]  xl:w-[1150px] py-[30px] px-[20px] md:px-[50px] '>
 
                     <p className='font-DanaMedium text-[#000000] text-lg text-center'>ثبت نام مصرف کننده</p>
                     <form onSubmit={(e) => e.preventDefault()} className='mt-6'>
-                        <div className='grid grid-cols-2 gap-8'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                             {/* name */}
                             <div>
                                 <div className="flex flex-col relative">

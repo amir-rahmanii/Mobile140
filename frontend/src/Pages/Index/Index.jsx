@@ -57,17 +57,17 @@ export default function Index() {
                 <SwiperBaner />
               </div>
               {/* titleProduct */}
-              {/* <div className='mt-8 flex justify-center gap-6'>
+              <div className='mt-8 itemTitle flex items-center md:justify-center overflow-x-auto gap-6 px-8 md:px-0'>
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
                 <TitleProducts />
-              </div> */}
+              </div>
 
               {/* swiper offer product */}
-              {/* <div className='px-[24px] mt-12 flex flex-col md:flex-row items-center justify-center gap-6'>
+              <div className='md:px-[24px] mt-12 flex flex-col 2xl:flex-row items-center justify-center gap-12 md:gap-6'>
                 <SwiperProductOffer
                   bgColor="bg-mainRed"
                   title="شگفت‌انگیز موبایل‌ و تبلت"
@@ -78,27 +78,29 @@ export default function Index() {
                   title="شگفت‌انگیز سایر کالاها"
                   img="/src/assets/images/offerProduct/3.png"
                 />
-              </div> */}
+              </div>
 
               {/* images */}
-              {/* <div className='flex justify-center items-center gap-5 my-12'>
-                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/1.jpg" alt="1" />
-                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/2.jpg" alt="2" />
-                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/3.jpg" alt="3" />
-                <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/4.jpg" alt="4" />
-              </div> */}
+              <div className='flex justify-center items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 my-12'>
+                  <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/1.jpg" alt="1" />
+                  <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/2.jpg" alt="2" />
+                  <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/3.jpg" alt="3" />
+                  <img loading='lazy' className='w-[275px] h-[172px]' src="/src/assets/images/index/4.jpg" alt="4" />
+                </div>
+              </div>
 
               {/* products */}
-              {/* <div>
+              <div>
                 <SwiperProduct />
                 <SwiperProduct />
                 <SwiperProduct />
                 <SwiperProduct />
-              </div> */}
+              </div>
 
               {/* infos */}
-              {/* <div className='flex justify-center items-center '>
-                <div dir='ltr' className=' border rounded-[10px] w-[1150px] '>
+              <div className='flex itemTitle px-8 md:justify-center items-center overflow-x-auto'>
+                <div dir='ltr' className=' border rounded-[10px] md:w-[750px] lg:w-[950px] xl:w-[1150px] '>
                   <div className='flex divide-x-2 py-3'>
                     <Info140
                       title='تضمین قیمت'
@@ -122,7 +124,7 @@ export default function Index() {
                     />
                   </div>
                 </div>
-              </div> */}
+              </div>
 
               {/* articles */}
               {/* <div className='flex justify-center'>
@@ -130,9 +132,9 @@ export default function Index() {
               </div> */}
 
               {/* best brands */}
-              {/* <div>
+              <div>
                   <BestBrands />
-              </div> */}
+              </div>
             </div>
             {/* footer */}
             <div>

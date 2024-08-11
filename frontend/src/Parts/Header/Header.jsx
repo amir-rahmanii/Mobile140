@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import { FiShoppingCart } from "react-icons/fi";
 import BasketSide from './BasketSide';
 import { FiMenu } from "react-icons/fi";
 import NavBarMobile from './NavBarMobile';
+import { useDispatch } from 'react-redux';
+import { isOpenBasket } from '../../Redux/isBasket/isBasket';
+import { isOpenNavBar } from '../../Redux/isNavBar/isNavBar';
 
 export default function Header() {
-
-    const [isShowOpenBasket, setIsShowOpenBasket] = useState(false)
-    const [isOpenNavBar, setIsOpenNavBar] = useState(false)
+    const dispatch = useDispatch();
 
     return (
         <>
@@ -33,7 +34,7 @@ export default function Header() {
                     {/* login register and basket product */}
                     <div className='flex items-center gap-5'>
                         {/* menu burger in mobile */}
-                        <button onClick={() => setIsOpenNavBar(true)} className='text-[#4D4D4D] block lg:hidden text-2xl'>
+                        <button onClick={() => dispatch(isOpenNavBar())} className='text-[#4D4D4D] block lg:hidden text-2xl'>
                             <FiMenu />
                         </button>
                         {/* login register */}
@@ -47,7 +48,7 @@ export default function Header() {
                             </Link>
                         </div>
                         {/* basket */}
-                        <div onClick={() => setIsShowOpenBasket(true)} className='flex rounded-[5px] relative items-center md:border border-[#D7DEE0] p-[5px] text-[16px] md:text-[20px]'>
+                        <div onClick={() => dispatch(isOpenBasket())} className='flex rounded-[5px] relative items-center md:border border-[#D7DEE0] p-[5px] text-[16px] md:text-[20px]'>
                             <FiShoppingCart className='hover:scale-110 transition-all duration-300' />
                             <div className='bg-mainRed text-[#ffffff] absolute right-[-10px] bottom-[-5px] rounded-[5px] min-w-4 h-4 pt-[2px] flex justify-center items-center text-xs'>
                                 <span>1</span>
@@ -66,10 +67,10 @@ export default function Header() {
                 </div>
             </header>
             {/* basket component */}
-            <BasketSide isShowOpenBasket={isShowOpenBasket} setIsShowOpenBasket={setIsShowOpenBasket} />
+            <BasketSide />
 
             {/* NavBar Component */}
-            <NavBarMobile isOpenNavBar={isOpenNavBar} setIsOpenNavBar={setIsOpenNavBar} />
+            <NavBarMobile />
 
         </>
     )

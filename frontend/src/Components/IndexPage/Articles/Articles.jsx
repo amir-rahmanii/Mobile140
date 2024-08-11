@@ -21,7 +21,7 @@ export default function Articles() {
 
 
   return (
-    <div className='w-[1150px] mt-16 font-DanaMedium'>
+    <div className='w-full md:w-[750px] lg:w-[950px] xl:w-[1150px] mt-16 font-DanaMedium'>
       <div className=''>
         {/* title and btns */}
         <div className='flex justify-between'>

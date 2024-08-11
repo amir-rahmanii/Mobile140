@@ -156,8 +156,25 @@
         background-clip: padding-box, border-box;
         background-origin: padding-box, border-box;
     }
+
+    /* item title */
+    .itemTitle::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+
+    .itemTitle {
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+
+
 }
 
+/* for scrollBar */
 /* width */
 ::-webkit-scrollbar {
     width: 6px;

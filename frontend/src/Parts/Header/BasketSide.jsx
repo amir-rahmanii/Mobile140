@@ -2,15 +2,22 @@ import React from 'react'
 import BlackScreen from '../../Components/BlackScreen/BlackScreen';
 import { IoCloseOutline } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
+import { useDispatch, useSelector } from 'react-redux';
+import { isCloseBasket } from '../../Redux/isBasket/isBasket';
 
-export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
+export default function BasketSide() {
+  const dispatch = useDispatch()
+  const isBasket = useSelector(state => state.isBasket.status)
+
+  console.log(isBasket);
+  
   return (
     <>
-      <div className={`fixed z-50 font-DanaMedium bg-white  w-[320px] md:w-[356px] transition-all duration-300 px-5 top-0 bottom-0 ${isShowOpenBasket ? "right-0" : "right-[-356px]"}`}>
+      <div className={`fixed z-50 font-DanaMedium bg-white  w-[320px] md:w-[356px] transition-all duration-300 px-5 top-0 bottom-0 ${isBasket ? "right-0" : "right-[-356px]"}`}>
         {/* title and cancel */}
         <div className='border-b border-[#DEDEDE] flex justify-between items-center'>
           <strong className='text-lg/[50px] font-Dana text-mainBlue'>سبد خرید</strong>
-          <button onClick={() => setIsShowOpenBasket(false)} className='text-2xl text-[#4D4D4D]'>
+          <button onClick={() => dispatch(isCloseBasket())} className='text-2xl text-[#4D4D4D]'>
             <IoCloseOutline />
           </button>
         </div>
@@ -34,7 +41,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
                       <MdDelete />
                     </div>
                     <span className='text-sm'>حذف</span>
-                    
+
                   </button>
                 </div>
               </div>
@@ -72,7 +79,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
                       <MdDelete />
                     </div>
                     <span className='text-sm'>حذف</span>
-                    
+
                   </button>
                 </div>
               </div>
@@ -110,7 +117,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
                       <MdDelete />
                     </div>
                     <span className='text-sm'>حذف</span>
-                    
+
                   </button>
                 </div>
               </div>
@@ -148,7 +155,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
                       <MdDelete />
                     </div>
                     <span className='text-sm'>حذف</span>
-                    
+
                   </button>
                 </div>
               </div>
@@ -186,7 +193,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
                       <MdDelete />
                     </div>
                     <span className='text-sm'>حذف</span>
-                    
+
                   </button>
                 </div>
               </div>
@@ -224,7 +231,7 @@ export default function BasketSide({ isShowOpenBasket, setIsShowOpenBasket }) {
           </div>
         </div>
       </div>
-      <BlackScreen isShowItem={isShowOpenBasket} setIsShowItem={setIsShowOpenBasket} />
+      <BlackScreen />
     </>
   )
 }

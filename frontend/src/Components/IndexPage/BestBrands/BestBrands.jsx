@@ -7,12 +7,12 @@ export default function BestBrands() {
 
     return (
         <div className='mt-12 font-DanaMedium flex justify-center'>
-            <div className='w-[1150px]'>
-                <div className='border-b pb-10'>
+            <div className='w-full md:w-[750px] lg:w-[950px] xl:w-[1150px]'>
+                <div className='border-b pb-10 px-8 md:px-0'>
                     {/* title */}
                     <p className='text-2xl text-center font-DanaDemiBold'> برند های برتر</p>
                     {/* items */}
-                    <div className='border rounded-[10px] p-4 flex justify-around mt-6'>
+                    <div className='itemTitle border rounded-[10px] p-4 flex overflow-x-auto justify-around mt-6 gap-3 md:gap-0'>
                         <img src="/src/assets/images/brands/1.png" alt="1" />
                         <img src="/src/assets/images/brands/1.png" alt="1" />
                         <img src="/src/assets/images/brands/1.png" alt="1" />
@@ -21,7 +21,7 @@ export default function BestBrands() {
                     </div>
                 </div>
                 {/* paragrapg */}
-                <div className='pt-6'>
+                <div className='pt-6 px-3 md:px-0'>
                     <p className='text-xs/[13px] text-[#4D4D4D]'>موبایل 140 فروشگاه آنلاین خرید گوشی موبایل</p>
                     <p className='text-justify text-sm/[30px] mt-2 text-[#4D4D4D] font-Dana'>
                         فروشگاهی با 25 سال سابقه فعالیت در زمینه فروش کالاهای دیجیتال. ما بهترین قیمت را در اکثر محصولات ارائه می‌دهیم و به عنوان یکی از به‌روزترین فروشگاه‌های کشور، با افتخار به مشتریان خود خدمات ارزشمندی ارائه می‌دهیم. در موبایل 140، می‌توانید از تنوع گسترده‌ای از محصولات دیجیتال مانند تلفن همراه‌ها، تبلت‌ها، لوازم جانبی و بسیاری محصولات دیجیتال دیگر بهره‌برداری کنید. با تیم ما از تخصص و تجربه طولانی ما اطمینان حاصل کنید که بهترین کیفیت را با بهترین قیمت به شما ارائه می‌دهیم. ما در موبایل 140 به دنبال رضایت شما هستیم. به همین دلیل، تلاش می‌کنیم تا تجربه خریدی آسان، سریع و امن را برای شما فراهم کنیم.

@@ -19,15 +19,14 @@ export default function LoginTemplate({ loginHandler }) {
     });
 
     return (
-        <div className='border border-[#D9D9D9] py-[30px] px-[50px] '>
-
+        <div className='border border-[#D9D9D9] py-[30px] px-[20px] md:px-[50px] '>
             <p className='font-DanaMedium text-[#000000] text-lg text-center'>ورود به سایت</p>
             <form onSubmit={(e) => e.preventDefault()} className='mt-6'>
                 <div className='flex flex-col'>
                     {/* Phone */}
                     <div>
                         <div className="flex flex-col relative">
-                            <input {...register('phone')} type="text" className="input-field text-[#4D4D4D] w-[368px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
+                            <input {...register('phone')} type="text" className="input-field text-[#4D4D4D] w-[269px] md:w-[368px] text-sm py-[6px] px-3" autoComplete="off" placeholder=" " />
                             <label htmlFor="" className="input-label">
                                 <span className="label-name text-[#4D4D4D]">شماره همراه</span>
                             </label>

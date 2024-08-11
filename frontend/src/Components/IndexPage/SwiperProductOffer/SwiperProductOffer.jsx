@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import Timer from './Timer';
 
-export default function SwiperProductOffer({bgColor , title , img}) {
+export default function SwiperProductOffer({ bgColor, title, img }) {
 
     const sliderRef = useRef(null);
 
@@ -21,27 +21,29 @@ export default function SwiperProductOffer({bgColor , title , img}) {
 
 
     return (
-        <div className={`${bgColor} py-5 pr-[10px] h-[445px] flex items-center gap-3`}>
+        <div className={`${bgColor} w-full md:w-[800px] 2xl:w-full py-5 pr-[10px] h-[445px] flex items-center gap-3`}>
             {/* info */}
             <div className='flex flex-col justify-center items-center gap-5 px-5 h-full'>
-                <p className='font-DanaDemiBold text-2xl text-center text-white text-wrap'>{title} </p>
+                <p className='font-DanaDemiBold text-xl md:text-2xl text-center text-white text-wrap w-[80px] md:w-[120px]'>{title} </p>
                 <img className='w-[130px] h-[150px]' src={img} alt="1" />
                 <Link className='text-white rounded-[5px] border border-white p-2 flex justify-center items-center gap-1'>مشاهده همه  <IoIosArrowBack /></Link>
             </div>
-            <div className='relative w-[400px] md:w-[530px]'>
+            <div className='relative w-[165px] 3xs:w-[345px] md:w-[530px]'>
                 <div className="cursor-pointer  shadow-md translate-x-1/2 w-[40px] h-[40px] bg-[#F7F7F7] rounded-[10px] text-[#4D4D4D] text-[20px] absolute right-0 bottom-1/2 z-10 flex justify-center items-center hover:bg-[#E21E24] hover:text-white transition-all duration-300" onClick={handlePrev}><IoIosArrowForward /></div>
                 <Swiper
                     ref={sliderRef}
                     speed={1200}
                     slidesPerView={1}
-                    modules={[Navigation , Autoplay]}
+                    modules={[Navigation, Autoplay]}
                     autoplay={true}
-                    // breakpoints={{
-                    //     '0': {
-                    //         slidesPerView: 1,
-                    //         spaceBetween: 10,
-                    //     },
-                    // }}
+                    breakpoints={{
+                        520: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        }
+                    }}
                     className="mySwiper"
                 >
                     <SwiperSlide >
@@ -66,7 +68,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                             {/* timer */}
                             <div className='py-[7px] bg-[#E21E24]'>
-                                    <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
+                                <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -92,7 +94,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                             {/* timer */}
                             <div className='py-[7px] bg-[#E21E24]'>
-                                    <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
+                                <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -118,7 +120,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                             {/* timer */}
                             <div className='py-[7px] bg-[#E21E24]'>
-                                    <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
+                                <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -144,7 +146,7 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                             {/* timer */}
                             <div className='py-[7px] bg-[#E21E24]'>
-                                    <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
+                                <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -170,12 +172,12 @@ export default function SwiperProductOffer({bgColor , title , img}) {
                             </div>
                             {/* timer */}
                             <div className='py-[7px] bg-[#E21E24]'>
-                                    <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
+                                <div className='font-DanaDemiBold text-center text-white text-sm'><Timer /></div>
                             </div>
                         </div>
                     </SwiperSlide>
-              
-               
+
+
 
                 </Swiper>
 

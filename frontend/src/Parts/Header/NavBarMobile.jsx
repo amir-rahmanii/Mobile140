@@ -4,19 +4,24 @@ import { IoCloseOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
+import { useDispatch, useSelector } from 'react-redux';
+import { isCloseNavBar } from '../../Redux/isNavBar/isNavBar';
 
-export default function NavBarMobile({ isOpenNavBar, setIsOpenNavBar }) {
+export default function NavBarMobile() {
+
+    const dispatch = useDispatch()
+    const isNavBar = useSelector(state => state.isNavBar.status)
 
     const [isOpenedSubMenu, setIsOpenedSubMenu] = useState(false)
     const [isOpenedSubSubMenu, setIsOpenedSubSubMenu] = useState(false)
 
     return (
         <>
-            <div className={`fixed z-50 lg:hidden font-DanaMedium bg-white overflow-y-auto w-[320px] md:w-[356px] transition-all duration-300 top-0 bottom-0 ${isOpenNavBar ? "right-0" : "right-[-356px]"}`}>
+            <div className={`fixed z-50 lg:hidden font-DanaMedium bg-white overflow-y-auto w-[320px] md:w-[356px] transition-all duration-300 top-0 bottom-0 ${isNavBar ? "right-0" : "right-[-356px]"}`}>
                 {/* title and cancel */}
                 <div className='border-b px-4 py-2 bg-mainBlue border-[#DEDEDE] flex justify-between items-center'>
                     <strong className='text-sm font-Dana text-white'>منوی دسترسی</strong>
-                    <button onClick={() => setIsOpenNavBar(false)} className='text-2xl text-white hover:text-mainRed hover:bg-white transition-all duration-300'>
+                    <button onClick={() => dispatch(isCloseNavBar())} className='text-2xl text-white hover:text-mainRed hover:bg-white transition-all duration-300'>
                         <IoCloseOutline />
                     </button>
                 </div>
@@ -59,9 +64,6 @@ export default function NavBarMobile({ isOpenNavBar, setIsOpenNavBar }) {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className='lg:hidden'>
-                <BlackScreen isShowItem={isOpenNavBar} setIsShowItem={setIsOpenNavBar} />
             </div>
         </>
     )
