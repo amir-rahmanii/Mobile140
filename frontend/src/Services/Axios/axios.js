@@ -1,14 +1,10 @@
 import axios from 'axios'
-import Cookies from 'js-cookie'
 
 
 
 
 const apiRequest = axios.create({
-  baseURL: 'http://localhost:8080',
-  headers: {
-    Authorization: `Bearer ${Cookies.get('token')}`
-  }
+  baseURL: 'http://localhost:4000'
 });
 
 // apiRequest.interceptors.response.use(
